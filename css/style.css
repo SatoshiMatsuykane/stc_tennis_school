@@ -478,7 +478,7 @@ img {
 
 /* トップページ以外の画像 */
 .content-fv {
-  background-image: url(/images/content-fv.jpg);
+  background-image: url("https://github.com/SatoshiMatsuykane/stc_tennis_school/blob/main/images/content-fv.jpg?raw=true");
   background-size: cover;
   background-position: center;
   position: relative;
