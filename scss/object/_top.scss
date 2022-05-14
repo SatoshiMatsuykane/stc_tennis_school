@@ -1,0 +1,103 @@
+/* トップページ用画像 */
+.fv {
+    position: relative;
+    .fv-img {
+        object-fit: cover;
+        height: 600px;
+        min-height: 100%;
+        @include overTab {
+            height: 800px;
+        }
+    }
+    .main-copy {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        text-shadow: 1px 2px 3px #808080;
+    
+        @include overTab {
+            top: 40%;
+            left: 10%;
+            transform: translate(0);
+        }
+    }
+    .jp-copy {
+        font-size: 4rem;
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 15px;
+        @include overTab {
+            font-size: 5.5rem;
+            margin-bottom: 10px;
+        }
+    }
+    .school-copy {
+        font-size: 2rem;
+        color: cl(white);
+        font-weight: bold;
+        margin-bottom: 20px;
+        }
+        @include overTab {
+            font-size: 2.5rem;
+            
+    }
+    .fv-link {
+        width: 400px;
+        margin: 0 auto;
+        a {
+            color: cl(white);
+            background-color: cl(orange);
+            font-size: 1.2rem;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px cl(grey);
+           &:hover {
+                background: hsl(16,100%,50%);
+           }
+           @include overTab {
+                font-size: 1.6rem;
+                padding: 20px 35px;
+            }
+        }
+    }
+    .slick-arrow {
+        display: none;
+    }
+}
+
+/* トップページ以外の画像 */
+.content-fv {
+    background-image: url(/images/content-fv.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 500px;
+    &:before {
+        background: inherit;
+        content: '';
+        filter: blur(2px);
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        bottom: -5px;
+        left: -5px;
+      }
+    .copy-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        text-shadow: 1px 2px 3px #808080;
+    }
+    .contact-copy {
+        font-size: 3rem;
+        color: cl(white);
+        padding-bottom: 30px;
+        @include overTab {
+            font-size: 6rem;
+        }
+    }
+}

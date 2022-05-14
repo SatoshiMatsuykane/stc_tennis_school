@@ -1,0 +1,82 @@
+.article-section {
+    .article-list {
+        padding: 40px 0 30px; 
+    }
+    .article-item {
+        display: flex;
+        flex-flow: column-reverse;
+        padding: 0 20px;
+        @include overTab {
+            flex-flow: row-reverse;
+            padding: 0px;
+        }
+        + .article-item {
+            margin-top: 50px;
+        }
+        a {
+            color: cl(black);
+        }
+        .article-text {
+            padding: 30px 30px 0;
+        }
+        .data {
+            color: cl(dark-grey);
+            font-size: 1.4rem;
+            @include overTab {
+                font-size: 1.6rem;
+                margin-bottom: 15px;
+            }
+        }
+        .article-title {
+            font-size: 2rem;
+            padding: 15px 0 20px;
+            text-decoration: underline;
+            @include overTab {
+                font-size: 2rem;
+            }
+        }
+        .article-desc {
+            color: cl(dark-grey);
+            font-size: 1.4rem;
+            @include overTab {
+                font-size: 1.6rem;
+                line-height: 1.6;
+            }
+        }
+    }
+    .article-pager {
+        padding-top: 76px;
+        .inner {
+            display: flex;
+            justify-content: center;
+        }
+        .number,.dots {
+            width: 46px;
+            height: 46px;
+            span {
+                color: cl(black);
+                height: 46px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .number {
+            border: 2px solid cl(blue);
+            &.-current {
+                background-color: cl(orange);
+            }
+            + .number {
+                margin-left: 20px;
+            }
+            a {
+                display: block;
+                transition: background-color .3s ease;
+                &:hover {
+                    background-color: cl(orange);
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}

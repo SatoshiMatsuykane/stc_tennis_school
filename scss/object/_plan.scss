@@ -1,0 +1,131 @@
+/* スケジュール */
+.plan-section {
+    margin: 30px 20px 0;
+    @include overTab {
+        margin: 30px 0
+    }
+    .plan-title {
+        background-color: cl(green);
+        border-radius: 50px;
+        color: cl(white);
+        width: 180px;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        text-align: center;
+        padding: 12px 0;
+        @include overTab {
+            font-size: 2rem;
+            width: 250px;
+            padding: 20px 0;
+        }
+    }
+    .plan-table {
+        border: 1px solid;
+        margin-top: 20px;
+        @include overTab {
+            margin-top: 40px;
+        }
+    }
+    th {
+        font-size: 1.4rem;
+        width: 200px;
+        border: 1px solid cl(darkgrey);
+        padding: 10px 0;
+        outline: 10px;
+        color: cl(white);
+        @include overTab {
+            padding: 20px 0;
+        }
+    }
+    .plan-bg-green {
+        background-color: cl(green);
+        border: 1px solid;
+        padding-top: 20px;
+    }
+    td {
+        border: 1px solid;
+        font-size: 1rem;
+        padding: 25px 0;
+        text-align: center;
+        @include overTab {
+            padding: 40px 0;
+            font-size: 1.6rem;
+        }
+        &.plan-bg-yellow {
+            background-color: rgb(243, 243, 62);
+
+        }
+    }
+}
+
+
+/* 受講料金 */
+.price-section {
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 70px;
+    @include overTab {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .price-title {
+        background-color: cl(blue);
+        width: 180px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 50px;
+        color: #fff;
+        font-size: 1.2rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        @include overTab {
+            font-size: 2.5rem;
+            width: 250px;
+        }
+    }
+    .price-table {
+        border: 1px solid cl(darkgrey);
+        margin-top: 20px;
+        @include overTab {
+            margin-top: 40px;
+        }
+    }
+    th {
+        width: 250px;
+        border: 1px solid cl(darkgrey);
+        padding: 10px 0;
+        outline: 10px;
+        color: cl(white);
+        font-size: 1.2rem;
+        @include overTab {
+            padding: 20px 0;
+            font-size: 1.6rem;
+        }
+    }
+    .price-bg-blue {
+        background-color: cl(blue);
+        color: cl(white);
+        border: 1px solid #484747;
+    }
+    td {
+        border: 1px solid cl(darkgrey);
+        font-size: 1.4rem;
+        padding: 30px 0 20px 10px;
+        @include overTab {
+            font-size: 1.8rem;
+            text-align: center;
+            padding: 55px 0 40px 0;
+        }
+    }
+    .price-bg-yellow {
+        background-color: rgb(243, 243, 62);
+        @include overTab {
+            font-size: 2rem;
+        }
+    }
+    .price-desc {
+        width: 600px;
+        font-size: 1.6;
+    }
+}

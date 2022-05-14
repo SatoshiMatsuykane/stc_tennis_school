@@ -1,0 +1,50 @@
+.blog {
+    background-color: #F2F3F3;
+    .blog-list {
+        padding-top: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .row {
+        display: flex;
+        padding-top: 20px;
+
+    }
+    dt {
+        display: block;
+        text-align: center;
+        align-items: center;
+        line-height: 30px;
+        background-color: cl(blue);
+        color: cl(white);
+        font-size: 1.2rem;
+        font-weight: bold;
+        width: 75px;
+        margin-left: 20px;
+        @include overTab {
+            width: 170px;
+            font-size: 1.4rem;
+            margin-left: 0;
+        }
+        
+    }
+    dd {
+        flex: 1;
+        padding: 0 10px;
+        @include overTab {
+            padding-left: 30px;
+        }
+        
+        a {
+            font-size: 1.4rem;
+            color: cl(black);
+            text-decoration: underline;
+            @include overTab {
+                font-size: 2rem;
+            }
+        }
+    }
+    .blog-link {
+        margin: 60px auto 0;
+    }
+}

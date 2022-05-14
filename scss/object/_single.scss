@@ -1,0 +1,100 @@
+.single-section {
+    .blog-single-info {
+        .single-title {
+            font-size: 2.5rem;
+            padding: 0 20px;
+            @include overTab {
+                padding: 0;
+                font-size: 4rem;
+            }
+        }
+    }
+    .entry {
+        padding: 0 20px;
+        @include overTab {
+            display: flex;
+        }
+    }
+    .single-entry {
+        width: 77%;
+    }
+    .single-info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem;
+        padding: 20px 0;
+        .single-date {
+            font-size: 1.4rem;
+            @include overTab {
+                font-size: 1.6rem;
+            }
+        }
+        .single-cat {
+            font-size: 1.4rem;
+            @include overTab {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .single-img {
+        margin-bottom: 30px;
+
+    }
+    p {
+        @include overTab {
+            font-size: 1.8rem;
+        }
+    }
+    .single-widget {
+        padding-top: 70px;
+        @include overTab {
+            width: 22%;
+            padding-top: 20px;
+            margin-left: 40px;
+        }
+    }
+    .widget-relative {
+        padding: 12px 0;
+    }
+    .sub-title {
+        font-size: 2rem;
+        text-align: left;
+        border-bottom: 1px solid cl(blue);
+        padding-bottom: 10px;
+        @include overTab {
+            font-size: 2.5rem;
+        }
+    }
+
+    .sub-menu {
+        margin-bottom: 40px;
+        @include overTab {
+            margin-bottom: 80px;
+        }
+        a {
+            border-bottom: 1px #ddd solid;
+            padding: 15px 0 15px 10px;
+            color: #484747;
+            width: 100%;
+            font-size: 1.4rem;
+            @include overTab {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .sub-item {
+        padding-top: 40px;
+        a {
+            display: flex;
+        }
+        .sub-image {
+            width: 200px;
+        }
+        .title {
+            font-size: 1.2rem;
+            padding-left: 20px;
+            color: cl(darkgrey);
+        }
+    }
+
+}

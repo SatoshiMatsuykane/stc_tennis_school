@@ -1,0 +1,158 @@
+/* スクール紹介 */
+.school-section {
+    .school-list {
+        padding-top: 30px;
+    }
+    .school-item {
+        padding: 0 20px;
+        @include overTab {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        &.reverse {
+            flex-direction: row-reverse;
+        }
+        +.school-item{
+            padding-top: 30px;
+        }
+        .school-text {
+            align-items: center;
+            background-color: cl(lightblue);
+            width: 100%;
+            color: cl(darkgrey);
+            @include overTab {
+                width: 700px;
+            }
+            &.bg-lightgreen{
+                background-color: cl(lightgreen);
+            }
+        }
+        .school-title {
+            background-color: cl(blue);
+            font-size: 2.2rem;
+            padding: 20px 0 20px 40px; 
+            color: cl(white);
+            &.bg-green{
+                background-color: cl(green);
+            }
+            @include overTab {
+                font-size: 3.2rem;
+            }
+        }
+        .school-desc {
+            padding: 25px 50px;
+            font-size: 1.4rem;
+            @include overTab {
+                font-size: 2rem;
+                padding-top: 40px;
+            }
+        }
+        .shool-author{
+            text-align: center;
+            padding: 0 50px 20px 0;
+            @include overTab {
+                text-align: right;
+                padding: 30px 20px 0 0;
+                font-size: 1.8rem;
+            }
+        }
+        .school-card {
+            text-align: center;
+            padding: 20px 0;
+            color: cl(white);
+            &.flex {
+                display: flex;
+                justify-content: space-between;
+            }
+            p {
+                background-color: cl(green);
+                margin: 0 auto;
+                padding: 10px 0;
+                border-radius: 20px;
+                @include overTab {
+                    width: 400px;
+                }
+            }
+            .bg-blue {
+                width: 200px;
+                padding: 10px 0;
+                background-color: cl(blue);
+            }
+        }
+        .school-img{
+            height: 250px;
+                @include overTab {
+                    width: 400px;
+                    height: 400px;
+                }
+            img {
+                height: 250px;
+                @include overTab {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+/* スタッフ紹介 */
+.staff-section {
+    padding: 0 20px 70px;
+    @include overTab {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .staff-main-title {
+        background-color: cl(green);
+        font-size: 2.2rem;
+        padding: 20px 0 20px 40px;
+        color: cl(white);
+        @include overTab {
+            font-size: 3.2rem;
+        }
+    }
+    .staff-item {
+        @include overTab {
+            display: flex;
+            flex-flow: row-reverse;
+        }
+        + .staff-item {
+            padding-top: 20px;
+        }
+        .staff-text {
+            background-color: cl(lightgreen);
+            padding: 50px;
+        }
+        .staff-title {
+            font-size: 1.8rem;
+            @include overTab {
+                font-size: 2.5rem;
+            }
+        }
+        .staff-desc {
+            font-size: 1.4rem;
+            padding-top: 40px;
+            color: cl(darkgrey);
+            @include overTab {
+                font-size: 1.6rem;
+                width: 700px;
+            }
+        }
+        .staff-img {
+            @include overTab {
+                width: 400px;
+                height: 400px;
+            }
+            img {
+                height: 250px;
+                @include overTab {
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+

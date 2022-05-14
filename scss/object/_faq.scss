@@ -1,0 +1,42 @@
+.faq {
+    .faq-list {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px 20px 0;
+        @include overTab {
+            padding: 0;
+        }
+
+    }
+    .faq-item {
+        .title {
+            background-color: #5089C6;
+            display: block;
+            padding: 20px 0;
+            border: 1px solid #F0EAEA;
+            border-radius: 3px;
+            color: cl(white);
+            padding-left: 15px;
+            &:hover {
+                background-color: cl(blue);
+                transition: .3s;
+            }
+            @include overTab {
+                text-align: center;
+            }
+        }
+
+        .detail {
+            background-color: cl(lightgrey);
+            border: 1px solid #F0EAEA;
+            border-radius: 3px;
+            padding: 25px 50px;
+            font-size: 1.4rem;
+            color: cl(darkgrey);
+            display: none;
+            @include overTab {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

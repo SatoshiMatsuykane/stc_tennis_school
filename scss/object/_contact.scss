@@ -1,0 +1,122 @@
+.contact-section {
+    .contact-lead {
+        text-align: center;
+        font-size: 2rem;
+        @include overTab {
+            font-size: 3rem;
+        }
+    }
+    .form {
+        padding: 30px 20px 0;
+        max-width: 800px;
+        @include overTab {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    .form-item {
+        padding: 24px 0;
+        width: 100%;
+        align-items: center;
+        margin: 0 10px 0 25px;
+        @include overTab {
+            display: flex;
+            margin: 0px;
+        }
+    }
+    .form-item-label {
+        width: 100%;
+        max-width: 248px;
+        letter-spacing: 0.05em;
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-align: left;
+        @include overTab {
+            font-size: 1.8rem;
+        }
+    }
+    .form-item-label-required {
+        border-radius: 5px;
+        margin-right: 8px;
+        padding: 8px 0;
+        width: 48px;
+        display: inline-block;
+        text-align: center;
+        background-color: cl(orange);
+        color: cl(white);
+        font-size: 1.2rem;
+        @include overTab {
+            font-size: 1.4rem;
+        }
+    }
+    .form-item-input {
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        margin-top: 15px;
+        padding: 0 10px;
+        height: 48px;
+        flex: 1;
+        width: 80%;
+        background-color: cl(lightgrey);
+        font-size: 1.4rem;
+        @include overTab {
+            margin-left: 40px;
+            font-size: 1.8rem;
+            
+        }
+    }
+    .form-item-textarea {
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        margin-top: 20px;
+        padding: 0 1em;
+        height: 216px;
+        flex: 1;
+        width: 75%;
+        background-color: cl(lightgrey);
+        font-size: 1.8rem;
+        @include overTab {
+            margin-left: 40px;
+        }
+    }
+    .form-btn {
+        border-radius: 5px;
+        margin-top: 10px;
+        margin: 0 auto;
+        padding: 10px 0;
+        width: 120px;
+        display: block;
+        letter-spacing: 0.05em;
+        background-color: cl(orange);
+        color: cl(white);
+        font-weight: bold;
+        border: none;
+        @include overTab {
+            font-size: 2rem;
+            width: 280px;
+            margin-top: 32px;
+            padding: 20px 0;
+        }
+        &:hover {
+            background: hsl(16,100%,50%);
+            transition: 0.3s;
+        }
+    }
+}
+
+.contact-thanks {
+    .thanks-text {
+        margin: 20px 0;
+        text-align: center;
+        line-height: 2;
+        @include overTab {
+            font-size: 2rem;
+            line-height: 3;
+            margin: 40px 0;
+        }
+    }
+    a {
+        color: cl(black);
+        text-decoration: underline;
+    }
+}

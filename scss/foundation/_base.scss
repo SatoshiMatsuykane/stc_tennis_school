@@ -1,0 +1,52 @@
+$colors: (
+	white: #fff,
+	black: #000,
+	text: #333333,
+    grey: #808080,
+	darkgrey: #484747,
+	lightgrey: #eaedf2,
+    red: #FF0000,
+	blue: #064ACB,
+	lightblue: #afcafc,
+	orange: #F3A953,
+	green: #5bc8ac,
+	lightgreen: #b4f8e7,
+);
+
+@function cl($key) {
+	@return map-get($colors, $key);
+}
+
+// FONT
+// @inlcude TimesNewRoman;
+//--------------------------------------------------
+
+@mixin TimesNewRoman {
+	font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+// RESPONSIVE
+// @include overTab 
+//--------------------------------------------------
+
+@mixin overTab {
+	@media print,screen and (min-width: 790px) {
+		@content;
+	}
+}
+
+// UTILITY
+//--------------------------------------------------
+
+._sp {
+	@include overTab {
+		display: none;
+	}
+}
+
+._pc {
+	display: none;
+	@include overTab {
+		display: block;
+	}
+}
